@@ -4,6 +4,7 @@ import { ReactQueryDevtools } from 'react-query/devtools';
 
 import { useRoutes } from 'react-router-dom';
 import { routes } from "./routes";
+import Gnb from './components/gnb';
 
 const App = () => {
     const element = useRoutes(routes);
@@ -11,6 +12,7 @@ const App = () => {
     
     return (
         <QueryClientProvider client={queryClient}>
+            <Gnb />
             {element}
             <ReactQueryDevtools initialIsOpen={false} />
         </QueryClientProvider>
