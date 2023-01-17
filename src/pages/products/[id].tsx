@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 import { fetcher, QueryKeys } from '../../queryClient'
 import { Product } from '../../types'
 
-import ProductDetail from '../../components/detail'
+import ProductDetail from '../../components/product/detail'
 
 const ProductDetailPage = () => {
     const { id } = useParams();

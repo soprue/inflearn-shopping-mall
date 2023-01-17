@@ -1,5 +1,5 @@
 
-import { Product } from '../types'
+import { Product } from '../../types'
 
 const ProductDetail = ({
     item: {
